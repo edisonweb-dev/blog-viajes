@@ -1,0 +1,331 @@
+/*
+  Theme Name: Blog de Viajes
+  Theme URI:
+  Author: Edison Perdomo
+  Description: Tema para el sitio web de Blog de Viajes
+  Version: 1.0
+  Licence: GNU General Public Licence or Later
+  Tags: HTML5, CSS3, Viajes, Blog,
+*/
+body{
+  background-color: #f2f2f2;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.alignleft {
+  float:left;
+  margin-right: 20px;
+}
+.alignright {
+  float:right;
+  margin-left: 20px;
+}
+
+blockquote {
+  margin:20px 10px;
+  padding: .5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-size: 30px;
+  font-style: italic;
+  color:#a1a1a1;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+nav.navegacion {
+  background-color: #008fd1;
+}
+nav.navegacion ul {
+  margin-top: 25px;
+}
+
+nav.navegacion li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+nav.navegacion ul li.current_page_item,
+nav.navegacion ul li.current_page_parent {
+  background-color:  #004d70;
+}
+nav.navegacion ul li a {
+  padding:0;
+  color:#ffffff;
+  text-transform: uppercase;
+  font-size:16px;
+  padding: 10px 0;
+}
+nav.navegacion ul li a:hover {
+  background-color: transparent;
+  border:none;
+}
+.navbar-toggle {
+  border: 1px solid #ffffff;
+}
+.navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+.site-header {
+  height:600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 20px;
+}
+
+div.titulo {
+  line-height: 1.3;
+  padding: 6px 0;
+  border-left: 20px solid #008fd1;
+  margin: 20px auto;
+}
+div.titulo h1 {
+  background-color: #008fd1;
+  padding:4px 0;
+  color: #ffffff;
+  display: inline;
+  margin:0;
+  font-size: 60px;
+}
+div.titulo h1 span {
+  position: relative;
+  left:-10px;
+}
+
+@media (min-width: 768px) {
+  nav.navegacion {
+    padding: 10px 0;
+  }
+  nav.navegacion li {
+    margin-right: 20px;
+  }
+  nav.navegacion ul li.current_page_item,
+  nav.navegacion ul li.current_page_parent {
+    border-bottom: 3px solid #ffffff;
+    background-color: transparent;
+  }
+  nav.navegacion ul li a {
+    padding:0;
+  }
+  .site-header {
+    background-size:cover;
+    background-attachment: fixed;
+  }
+  .home .site-header {
+    height: 800px;
+  }
+
+  img.logo {
+    max-width: 400px;
+  }
+  .home div.titulo {
+    margin-top: 200px;
+  }
+  div.titulo {
+    margin-top: 100px;
+  }
+}
+
+
+/** Ultimas Entradas **/
+
+section.contenido .entrada {
+  margin-bottom: 20px;
+}
+
+div.contenido-entrada {
+  background-color: #ffffff;
+  padding:20px;
+  text-align: center;
+  min-height: 250px;
+}
+
+div.contenido-entrada h3 {
+  margin:0;
+  line-height: 24px;
+  font-family: 'Libre Baskersville',serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+div.contenido-entrada p {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+div.contenido-entrada span {
+  font-weight: bold;
+  color: #db008d;
+}
+div.contenido-entrada .btn.btn-success {
+  background-color: #008fd1;
+  color:#ffffff;
+  border-radius:0;
+  border:none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 50px;
+  margin-top: 20px;
+  transition: all .3s ease;
+}
+div.contenido-entrada .btn.btn-success:hover {
+  background-color: #0070a3;
+}
+
+
+/** POR CATEGORIAS **/
+
+section.categorias-blog div.categoria {
+  text-align: center;
+  background-color: #ffffff;
+  background-clip: content-box;
+  margin-bottom: 20px;
+}
+section.categorias-blog div.categoria i {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size:60px;
+}
+section.categorias-blog div.categoria:nth-child(1) i {
+  color: #eca300;
+}
+section.categorias-blog div.categoria:nth-child(2) i {
+  color: #008fd1;
+}
+section.categorias-blog div.categoria:nth-child(3) i {
+  color: #db008d;
+}
+section.categorias-blog div.categoria:nth-child(4) i {
+  color: #9800d1;
+}
+section.categorias-blog div.categoria a {
+  font-family: 'Libre Baskersville',serif;
+  margin-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 28px;
+  color:#000000;
+}
+
+footer {
+  background-color: #008fd1;
+  padding: 10px 0 0 0;
+  margin-top: 30px;
+  color: #ffffff;
+  text-align: justify;
+}
+footer h3 {
+  font-size: 22px;
+}
+footer a,
+footer a:hover {
+  color:#ffffff;
+  text-decoration: none;
+}
+footer .footer-info {
+  background-color: #004d70;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  margin:0;
+  padding:10px 0;
+  text-transform: uppercase;
+  margin-top:15px;
+}
+
+
+#social {
+  list-style: none;
+}
+#social li {
+  position: relative;
+  display: inline-block;
+}
+#social li a:before {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 5px;
+  font-family: 'fontAwesome';
+  font-size: 40px;
+  color:#fff;
+  content:'\f08e';
+  -webkit-font-smoothing: antialiased;
+}
+
+#social li a[href*="facebook.com"]::before{content:'\f082'; }
+#social li a[href*="plus.google.com"]::before{content:'\f0d4'; }
+#social li a[href*="twitter.com"]::before{content:'\f081'; }
+#social li a[href*="youtube.com"]::before{content:'\f16a'; }
+
+
+/** Interiores **/
+section.contenido {
+  margin-top: 20px;
+}
+/** Contacto **/
+
+.pagina-full-width {
+  margin-top: 50px;
+}
+.ninja-forms-required-items {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.ninja-forms-form-wrap input,
+.ninja-forms-form-wrap textarea {
+  height: 40px!important;
+  border:none!important;
+}
+.ninja-forms-form-wrap textarea {
+  height: 200px!important;
+}
+.text-wrap.label-above label,
+.textarea-wrap.label-above label {
+  font-weight: normal;
+}
+.ninja-forms-form-wrap input[type=submit] {
+  background-color: #0088c6;
+  padding: 10px 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:#ffffff;
+}
+
+/** Pagina con Sidebar **/
+.page-template-page-sidebar-php section.contenido {
+  margin-top: 0px;
+}
+.page-template-page-sidebar-php footer {
+  margin-top: 0;
+}
+.contenido-pagina {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-shadow: 768px 0px 0px #e6e6e6;
+  text-align: justify;
+}
+aside.sidebar-widget {
+  padding-top: 20px;
+}
+aside.sidebar-widget h3 {
+  font-size: 30px;
+}
+aside.sidebar-widget li {
+  margin-bottom: 10px;
+}
+aside.sidebar-widget li a,
+aside.sidebar-widget li a:hover {
+  color:#008fd1;
+  text-decoration: none;
+}
